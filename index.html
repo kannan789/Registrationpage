@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample Layout</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<style>
+		h3,div
+		{
+			font-family: sans-serif;
+		}
+		.flex_parent{
+			display: flex;
+			box-sizing: border-box;
+			flex-direction: row;
+			height:700px;
+			margin:-8px;
+		}
+		.page{
+			text-align: right;
+			padding-right: 20px;
+			padding-top: 20px;
+			font-size: 10px;
+			font-weight: bold;
+		}
+		
+		.reg_side{
+		    display:flex;
+			flex-direction: column;
+			text-align: center;
+		    flex-basis: 65%;
+			flex-grow: 0;
+			flex-shrink: 0;
+			background-color: #f5f5f5;
+			box-sizing: border-box;
+		}
+		.side_bar{
+			display: flex;
+			flex-basis: 35%;
+			flex-grow: 0;
+			flex-shrink: 0;
+			background-color: #0276FD;
+			margin-left: -9px;
+			color:#fff;
+			flex-direction: column;
+			text-align: center;
+			justify-content: center;
+			align-content: space-around;
+		}
+		.side_text
+		{
+			display: flex;
+			width:300px;
+			margin-left: 100px;
+			text-align: left;
+			margin-top: 40px;
+			line-height: 25px;
+			font-weight: 10;
+		}
+		.form{
+		display:flex;
+		flex-direction: column;
+		text-align: center;
+		justify-content: center;
+		margin-top:100px;
+	    }
+	    #signin{
+		margin-left: -140px;
+		font-size: 12px;
+	    }
+	    input,select{
+	    display: inline-block;
+	    width: 310px;
+	    height:30px;
+	    margin-top: 7px;
+	    margin-bottom: 7px;
+	    background-color:  #f5f5f5;
+        }
+       a{
+	   text-decoration: none;
+	   font-weight: bold;
+	   color: blue;
+	   }
+	   .input_area
+	   {
+	   text-align: center;
+	   margin-top:20px;
+	   opacity: 0.4;
+	   }
+       .pwd_txt
+       {
+	   margin-left: -220px;
+	   font-size: 10px;
+       }
+       .terms
+       {
+	   display:inline-block;
+	   font-size: 10px;
+	   margin-top: 20px;
+	   margin-left: 248px;
+	   width:310px;
+	   text-align-last: left;
+	   line-height: 20px;
+       }
+       input[type="button"]
+       {
+	   background-color: lightgrey;
+	   margin-top: 5px;
+	   padding-top: 15px;
+	   padding-bottom: 15px;
+	   font-size: 10px;
+	   text-align: center;
+	   margin-left: -5px;
+       }
+       h2,.signin
+       {
+	   margin-left: -30px;
+       }
+</style>
+	</head>
+	<body>
+		<div class="flex_parent">
+		<div class="reg_side"> 
+			<div class="page">Step 1 of 3 . . .</div>
+			<form class="form">
+				<h2>Let's set up your account</h2>
+				<div id="signin">Already have an account?<a href="">Sign In</a>
+				</div>
+				<div class="input_area">
+				<input type="text" placeholder="Your name"><br>
+				<input type="email" placeholder="Email address"><br>
+		        <input type="text" name="example" list="exampleList" placeholder="I would describe my user type as">
+                    <datalist id="exampleList">
+                        <option value="A">  
+                        <option value="B">
+                    </datalist><br>
+                <input type="password" placeholder="Password"><br>
+		        <div class="pwd_txt">
+				Minimum 8 characters</div><br>
+				<input type="button" name="Submit" value="Next">
+			    </div>
+			    <div class="terms">By clicking the "Next" button, you agree to creating a free account, and to <a href="">Terms of Service </a> and <a href="">Privacy Policy</a></div>
+            </form>
+		</div>
+		<<div class="side_bar">
+			<h2>Dummy Heading</h2>
+			<div class="side_text">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+		</div>
+		</div>
+		</div>
+	</body>
+	</html>
